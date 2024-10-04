@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Vite + TS</title>
+</head>
+
+<body>
+	<div id="app">
+		<span>模型</span><input type="file" id="modelUpload" accept=".vrm" /><br>
+		<span>动画(可选)</span><input type="file" id="animationUpload" accept=".vrma" /><br>
+		<button id="loadModelAndAnimation">加载</button>
+		<button id="createXR">初始化AR环境</button><br>
+		<textarea id="log"></textarea>
+	</div>
+	<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
