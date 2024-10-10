@@ -7,6 +7,26 @@ export default defineConfig({
     },
     base: './',
     plugins: [
-        VitePWA()
+        VitePWA({
+            includeAssets: ['vite.svg'],
+            manifest: {
+                name: '使用AR的VRM模型查看器',
+                short_name: 'ar-dance',
+                description: '使用AR的VRM模型查看器',
+                theme_color: '#ffffff',
+                icons: [
+                    {
+                        src: 'vite.svg',
+                        sizes: '192x192',
+                        type: 'image/svg'
+                    },
+                    {
+                        src: 'vite.svg',
+                        sizes: '512x512',
+                        type: 'image/svg'
+                    }
+                ]
+            }
+        })
     ]
 })
